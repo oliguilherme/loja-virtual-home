@@ -362,14 +362,48 @@ footer {
     align-self: center;
     width: 90%;
   }
+
+  .contato form {
+    width: 65%;
+    height: auto;
+  }
+  
+  .contato-img {
+    width: 35%;
+    height: 100%;
+  }
+  
+  .produto-text, .depoimento-text, .faq-text {
+    font-size: 1.5rem;
+  }
 }
 
-.contato form {
-  width: 65%;
-  height: auto;
-}
+@media screen and (max-width: 500px) { /*eu achei melhor 500px */
+  nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+  }
 
-.contato-img {
-  width: 35%;
-  height: 100%;
-}
+  .nav-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    margin-bottom: 10px;
+  }
+
+  .nav-menu {
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+  }
+
+  }
+  
