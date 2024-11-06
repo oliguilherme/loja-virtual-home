@@ -11,7 +11,7 @@ body {
 nav {
   width: 100%;
   height: 10vh;
-  background-color: aliceblue;
+  background-color: #c0c0c0;
   display: flex;
 }
 
@@ -110,6 +110,7 @@ nav {
   justify-content: center;
   flex-direction: column;
   margin-top: 60px;
+  flex-wrap: wrap;
 }
 
 .produto-text,
@@ -242,6 +243,7 @@ nav {
   justify-content: center;
   text-align: center;
   text-align: center;
+  margin-bottom: 20px;
 }
 
 form {
@@ -270,7 +272,7 @@ form {
 
 .form-submit {
   width: 100%;
-  padding: 10px;
+  padding: 15px;
   margin-top: 20px;
   background-color: #333;
   color: #f7f7f7;
@@ -294,3 +296,37 @@ form {
 .contato-img img {
   width: 80%;
 }
+
+/*footer*/
+
+footer {
+  width: 100%;
+  height: 10vh;
+  background-color: #333;
+  display: flex;
+  flex-direction: column;
+  color: #f7f7f7;
+  text-align: center;
+  justify-content: center;
+}
+
+.footer-text {
+  margin-bottom: 10px;
+}
+
+.footer-link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  list-style: none;
+}
+
+.footer-link a {
+  color: white;
+  text-decoration: none;
+}
+
+/* responsividade */
+
