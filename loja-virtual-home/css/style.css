@@ -49,6 +49,11 @@ nav {
   padding: 12px;
   font-size: 1.2rem;
   margin-right: 10px;
+  transition: color 0.3s ease;
+}
+
+.nav-menu ul li a:hover {
+  color: #f7f7f7;
 }
 
 .parallax {
@@ -333,12 +338,16 @@ footer {
 .footer-link a {
   color: white;
   text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-link a:hover {
+  color: wheat;
 }
 
 /* responsividade */
 
 @media screen and (max-width: 768px) {
-
   .nav-img img {
     width: 20%;
     height: auto;
@@ -349,7 +358,9 @@ footer {
     width: 40%;
   }
 
-  .produto-card, .depoimento-card, .faq-card {
+  .produto-card,
+  .depoimento-card,
+  .faq-card {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -358,7 +369,9 @@ footer {
     width: 100%;
   }
 
-  .card, .card2, .card3 {
+  .card,
+  .card2,
+  .card3 {
     align-self: center;
     width: 90%;
   }
@@ -367,43 +380,92 @@ footer {
     width: 65%;
     height: auto;
   }
-  
+
   .contato-img {
     width: 35%;
     height: 100%;
   }
-  
-  .produto-text, .depoimento-text, .faq-text {
+
+  .produto-text,
+  .depoimento-text,
+  .faq-text {
     font-size: 1.5rem;
   }
 }
 
-@media screen and (max-width: 500px) { /*eu achei melhor 500px */
+@media screen and (max-width: 500px) {
+  /*eu achei melhor 500px */
   nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 20vh;
-  }
-
-  .nav-img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-
     margin-bottom: 10px;
+    height: auto;
   }
 
   .nav-menu {
-    height: 10vh;
+    width: 100%;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    list-style: none;
   }
 
+  .nav-menu ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1px;
+    width: 100%;
   }
-  
+
+  .nav-menu ul li {
+    width: 100%;
+    align-items: center;
+    background-color: #333;
+  }
+
+  .nav-menu ul li a {
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+    color: #f7f7f7;
+  }
+
+  .nav-img {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+    height: auto;
+  }
+
+  .contato-img {
+    display: none;
+  }
+
+  .contato form {
+    width: 100%;
+    margin: 0;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .parallax h1 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .parallax p {
+    text-align: center;
+    font-size: 1.1rem;
+  }
+
+  .info {
+    width: 102%;
+  }
+}
