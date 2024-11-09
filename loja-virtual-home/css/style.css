@@ -207,7 +207,7 @@ nav {
 }
 
 .card-btn:hover a {
-  color: black; 
+  color: black; /* Altera a cor do texto do link quando a div é hover */
 }
 
 /*ajuests cards seção depoimento*/
@@ -348,6 +348,10 @@ footer {
 /* responsividade */
 
 @media screen and (max-width: 768px) {
+  .nav {
+    position: fixed;
+  }
+
   .nav-img img {
     width: 20%;
     height: auto;
@@ -356,6 +360,17 @@ footer {
   .info {
     gap: 20px;
     width: 40%;
+  }
+
+  .parallax h1 {
+    text-align: center;
+  }
+  .parallax p {
+    text-align: center;
+  }
+
+  .info {
+    width: 102%;
   }
 
   .produto-card,
@@ -402,6 +417,7 @@ footer {
     align-items: center;
     margin-bottom: 10px;
     height: auto;
+    position: relative;
   }
 
   .nav-menu {
